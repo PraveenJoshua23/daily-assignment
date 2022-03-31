@@ -15,7 +15,6 @@
 **Problems that we can face:**
 - Need a way to verify the donater, and the item they are giving away is legit and not a scam.
 - Might need a disclaimer that we are not responsible for them receiving damaged products.
-- Need 
 
 ### App Idea 3:
 3. **ReFuel On-Demand** - if your vehicle is stuck without petrol or diesel and there are no petrol stations nearby, aan operator is sent to refuel the said vehicle. Also recharge electric vehicles that are stranded without any charge.
