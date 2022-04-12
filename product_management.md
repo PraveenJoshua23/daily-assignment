@@ -92,6 +92,10 @@ At the stage of product creation, the focus is on value. Firstly, perfection doe
 
 __Step 6: Testing & feedback gathering__
 
-After the MVP is released, it's time to setup a feedback collection mechan
+After the MVP is released, it's time to setup a feedback collection mechanism. Firstly, we need to check how a user interacts with our product, capture feedback, find possible improvements and then communicate the product requirements to the team, implement the changes, and test. This stage should go through this cycle during the entire product development process.
+
+__Step 7: Constant Product Improvement__
+
+Through this process, this stage would not be considered the last or the endpoint but focus now shifts towards optimization and efficiency.
 
 
