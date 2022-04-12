@@ -32,9 +32,7 @@ While a product manager defines the direction of the product through research, v
 | Works with outside stakeholders | Works with internal stakeholders |
 | Helps to define the product vision | Helps teams execute on a shared vision |
 | Outlines what success looks like | Outlines the plan for achieving success |
-
 | Owns vision, marketing, ROI | Owns team backlog and fulfillment work |
-
 | Works at a conceptual level | Involded in day-to-day activities |
 
 
