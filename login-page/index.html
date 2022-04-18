@@ -12,12 +12,19 @@
 	<h2 style="color: white;">Login Page</h2>
 	<form style="text-align: center; padding: 20px;">
 	<label>Username:</label><br>
-	<input placeholder="Enter Username" type="text"></input><br>
+	<input placeholder="Enter Username" type="text" name="name" id="name"></input><br>
 	<label>Password:</label><br>
-	<input placeholder="Enter Password" type="password"></input><br>
-	<button type="submit">Submit</button>
+	<input placeholder="Enter Password" type="password" name="password" id="pass"></input><br>
+	<button type="submit" value="submit" onclick="Hello()">Submit</button>
 	<input type="checkbox" checked="checked">Remember me!</input>
 	</form>
 	</div>
+	<!--<script>
+		function Hello(){
+			console.log("Yo ho Hello");
+		}
+	</script> -->
+	<script src="./main.js"></script>
   </body>
+
 </html>
