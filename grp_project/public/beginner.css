@@ -7,7 +7,13 @@ html{
 	height: 100%;
 }
 
-
+.perus
+{
+    text-align: center; color: wheat; 
+    margin-top: 50px;
+    font-family: 'Monoton', cursive;
+    font-size: x-large;
+}
 body {
   height: 100%;
   margin: 0;
@@ -57,7 +63,7 @@ body {
 
 .container{
   padding:50px;
-  margin-top: 12vh;
+  margin-top: 0px;
   border-radius: 15px;
   background-color: #fff5e2;
   width:50vw;

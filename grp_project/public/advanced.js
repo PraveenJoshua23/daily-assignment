@@ -37,12 +37,6 @@ function generate()
     var v;
     console.log(`Handling for generate`);
     getapi("https://random-word-api.herokuapp.com/word").then((v) => console.log(v));
-
-//     if (spell.length<=6)
-//     {
-//         console.log(`Handling for generate`);
-//         getapi("https://random-word-api.herokuapp.com/word").then((v) => console.log(v)); 
-//     }
 }
 function speak()
 {
@@ -92,3 +86,7 @@ setTimeout(function() {generate(); document.getElementById("answer").innerHTML="
         setTimeout(function(){document.getElementById("answer").innerHTML=".";document.getElementById("input").style.borderColor='black';document.getElementById("color").style.backgroundColor='#fff5e2';},2000);
     }
 }
+
+let username=JSON.parse(localStorage.getItem('words'));
+console.log(username);
+document.getElementById("peru").innerText=username;

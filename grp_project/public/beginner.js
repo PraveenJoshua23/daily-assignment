@@ -190,3 +190,6 @@ skipBtn.addEventListener('click',()=>{
   removeElementsByClass('inputBox');
   getWord();
 })
+let username=JSON.parse(localStorage.getItem('words'));
+console.log(username);
+document.getElementById("peru").innerText=username;
