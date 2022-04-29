@@ -1,0 +1,275 @@
+<html>
+    <head>
+        <title>
+            Type It
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <style>
+            .body
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #16222A;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		overflow-x: hidden;
+            }
+            .main
+            {
+                background-color: #fff5e2; 
+                width:30%; 
+                padding:5%;
+                border-radius: 20px;
+            }
+            .icon_div
+            {
+                margin-left: 50%; 
+                transform: translate(-50%); 
+                height: 125px; 
+                width: 125px;
+            }
+            .databox
+            {
+                border: rgb(0, 0, 0) 1px solid; 
+                border-radius: 45px; 
+                height: 7%; 
+                width: 90%; 
+                font-size: large; 
+                font-family: 'Roboto' sans-serif; 
+                margin-top: 20px; 
+                margin-left: 50%;
+                padding-left: 10%;
+                transform: translateX(-50%);
+                text-transform: lowercase;
+            }
+            .number
+            {
+                display: flex; 
+                justify-content: center; 
+                font-family: 'Roboto', sans-serif; 
+                color: rgb(0, 0, 0); 
+                margin-top: 20px;
+            }
+            .ans_color
+            {
+                display: flex; 
+                justify-content: center; 
+                color: white; 
+                border-radius: 5px; 
+                margin-top: 10px;
+            }
+            .ans_txt
+            {
+                text-align: center;
+                font-family: 'Roboto' sans-serif;
+            }
+            .button
+            {
+                width: 55%;
+                height: 7%;
+                font-family: 'Roboto', sans-serif;
+                font-size: 11px;
+                text-transform: uppercase;
+                letter-spacing: 2.5px;
+                font-weight: 500;
+                color: #000;
+                background-color: #fff;
+                border: none;
+                border-radius: 50px;
+                box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+                cursor: pointer;
+                outline: none;
+            }
+            .button:hover
+            {
+                background-color: #3A6073;
+                color: wheat;
+                transform: translateY(-7px);
+            }
+            .button:active
+            {
+                background-color: #153e52;
+            }
+            .nav_bar
+            {
+                height: 20%;
+                width: 100%;
+                position: absolute;
+                top: 0px;
+                left: 5px;
+            }
+            .logo
+            {
+                text-align: center;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                line-height: 1px;
+                color: wheat;
+                margin-left: 20px;
+                font-family: 'Monoton', cursive;
+            }
+            .score
+            {
+                width: 8%;
+                text-align: center;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                margin-top: 20px;
+                margin-right: 20px;
+                background-color: #fff5e2;
+                font-family: 'Roboto' sans-serif;
+                font-size: large;
+                border-radius: 10px;
+            }
+            .begin
+            {
+                height: 7%;
+                width: 20%;
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: 20px;
+            }
+            .change
+            {
+                height: 100%;
+                width: 100%;
+                border-radius: 45px;
+                background-color: #fff5e2;
+                font-family: 'Roboto' sans-serif;
+                font-size: 17px;
+                font-weight: 500;
+                color: #16222A;
+            }
+            .change:hover
+            {
+                background-color: #3A6073;
+                color: wheat;
+                transform: translateY(-7px);
+            }
+            .pulse 
+            {
+            display: block;
+            cursor: pointer;
+            box-shadow: 0 0 0 rgb(2, 145, 188);
+            animation: pulse 2s infinite;
+            }
+            .pulse:hover {
+            animation: none;
+            }
+
+            @-webkit-keyframes pulse {
+            0% {
+            -webkit-box-shadow: 0 0 0 0 rgba(245, 222, 179, 0.6);
+            }
+            70% {
+            -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+            }
+            100% {
+            -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+            }
+            }
+            @keyframes pulse {
+            0% {
+            transform: scale(0.95);
+            -moz-box-shadow: 0 0 0 0 rgba(245, 222, 179, 0.6);
+            box-shadow: 0 0 0 0 rgba(245, 222, 179, 0.6);
+            }
+            70% {
+            transform: scale(1);
+            -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+            box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+            }
+            100% {
+            transform: scale(0.95);
+            -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+            box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+            }
+            }
+            .boxSwing
+            {
+                animation: swing 1s ease;
+                animation-iteration-count: 1;
+            }
+
+            @keyframes swing 
+            { 
+                15% 
+                { 
+                    transform: translateX(5px);
+                } 
+                30% 
+                { 
+                    transform: translateX(-5px);
+                } 
+                50% 
+                { 
+                    transform: translateX(3px);
+                } 
+                65% 
+                { 
+                    transform: translateX(-3px);
+                } 
+                80% 
+                { 
+                    transform: translateX(2px);
+                } 
+                100% 
+                { 
+                    transform: translateX(0);
+                } 
+            }
+        </style>
+    </head>
+    <body class="body">
+        <div class="nav_bar">
+            <div class="logo">
+                <p style="font-size: xxx-large;">TYPE</p>
+                <p style="font-size: xxx-large;">IT</p>
+            </div>
+           <p id="peru">.</p>
+            <div class="score">
+                <p style="text-align: center;"><b>Score</b></p>
+                <p style="text-align: center;" id="score">.</p>
+            </div>
+        </div>
+        <div class="main">
+            <p style="text-align: center;"><i>Click Here To Listen</i></p> 
+            <div class="icon_div">
+                <button class="button pulse" style="height: 125px; width: 125px; border-radius: 45px;" onclick="speak()">
+                    <span class="button__text" style="font-size: 4em;"><ion-icon name="volume-high-outline"></ion-icon></span>
+                </button>  
+            </div>
+            <div class="number" ><p>No of letters : </p><p id="number">.</p></div> 
+             <div class="inputclass">
+                <input type="text" id="input" class="databox">
+             </div>
+         <div style="display: flex; justify-content: center; margin-top: 30px; height: 7%;">
+         <button onclick="match()" class="button" style="height: 90%;" id="submitbtn">Submit</button>
+         <button style="margin-left: 10px; height: 90%;" onclick="generate()" class="button">Skip</button>
+         </div>
+         <div class="ans_color" id="color">
+            <p class="ans_txt" id="answer">.</p>
+         </div>
+         <!--<button onclick="getMeaning()">Hint</button>
+         <p id="meaning">meaning</p>-->
+        </div> 
+        <div class="begin">
+        <button onclick="location.href='beginner.html'" class="change"> Want to try Beginner?</button>
+        </div>
+        <script src="advanced.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://code.responsivevoice.org/responsivevoice.js?key=pHLke8R3"></script>
+    </body>
+</html>
+
+<!--onMouseOver="this.style.transform = 'translateY(-7px)'"  onMouseOut="this.style.transform = 'translateY(0px)'"-->

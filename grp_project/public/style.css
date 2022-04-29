@@ -1,0 +1,255 @@
+body, html {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 90%;
+  min-width: 800px;
+  margin: 0 auto;
+  /*background-color: rgb(0, 195, 255);*/
+  background: #16222A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.logo{
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  width: 180px;
+  line-height: 35px;
+  text-align: center;
+  
+}
+
+.textLogo{
+  font-family: 'Monoton', cursive;
+  font-size: 60px;
+  color: wheat;
+}
+
+.score{
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: 120px;
+  background-color: wheat;
+  border-radius: 20px;
+  margin-top: 20px;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.score p{
+  padding: 5px;
+  margin: 0;
+}
+
+.container{
+  padding:50px;
+  margin-top: 12vh;
+  border-radius: 15px;
+  background-color: #fff5e2;
+  width:50vw;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+}
+
+.tap{
+  font-style: italic;
+  text-align: center;
+}
+
+h1, p {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.clearfix {
+  clear: both;
+}
+
+
+.controls {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.controls button {
+  padding: 10px;
+}
+
+#wordLength{
+  display: block;
+}
+
+h1,h2,h3,h4,h5,h6,span{
+  text-align: center;
+}
+
+.btnClass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+#submit{
+  display: none;
+}
+
+#skip{
+  display: none;
+}
+
+.btnClass button{
+  flex-direction: row;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.inputBox{
+  width: 3vw;
+  height: 3vw;
+  border-radius: 15px;
+  background-color: ghostwhite;
+  font-size: 20px;
+  text-align: center;
+  margin: 0.5em;
+  border: solid 1px darkgray;
+}
+
+.controls button:hover{
+  transform: none;
+}
+
+.userInput{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button
+{
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover
+{
+    background-color: rgb(56 93 112);
+    color: #fff;
+    transform: translateY(-7px);
+}
+.button:active
+{
+    background-color: rgb(56 93 112);
+}
+
+.iconBtn{
+  font-size: 60px;
+  width: 125px;
+  height: 125px;
+}
+
+.try{
+  color: red;
+  font-size: 23px;
+}
+
+.correct{
+  color: #07dd13;
+  font-size: 23px;
+}
+
+
+.pulse {
+  
+  display: block;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgb(2, 145, 188);
+  animation: pulse 2s infinite;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(245, 222, 179, 0.6);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    -moz-box-shadow: 0 0 0 0 rgba(245, 222, 179, 0.6);
+    box-shadow: 0 0 0 0 rgba(245, 222, 179, 0.6);
+  }
+  70% {
+    transform: scale(1);
+    -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+.boxSwing{
+  animation: swing 1s ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes swing {
+  15% {
+  transform: translateX(5px);
+  }
+  30% {
+  transform: translateX(-5px);
+  }
+  50% {
+  transform: translateX(3px);
+  }
+  65% {
+  transform: translateX(-3px);
+  }
+  80% {
+  transform: translateX(2px);
+  }
+  100% {
+  transform: translateX(0);
+  }
+}
+  
